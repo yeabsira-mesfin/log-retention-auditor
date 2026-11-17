@@ -1,0 +1,45 @@
+{
+  "input": {
+    "start": 3,
+    "end": 8,
+    "streams": [
+      "auth",
+      "dns"
+    ],
+    "records": [
+      {
+        "stream": "auth",
+        "first": 0,
+        "last": 3
+      },
+      {
+        "stream": "auth",
+        "first": 5,
+        "last": 7
+      },
+      {
+        "stream": "dns",
+        "first": 1,
+        "last": 4
+      }
+    ]
+  },
+  "expected": {
+    "auth": [
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "dns": [
+      [
+        5,
+        8
+      ]
+    ]
+  }
+}
